@@ -1,4 +1,4 @@
-## VoiceMessenger
+## VoiceMessenger (local)
 For local pc to pc speaking
 
 
