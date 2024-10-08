@@ -1,2 +1,5 @@
-# VoiceMessenger
-For pc to pc speaking
+## VoiceMessenger
+For local pc to pc speaking
+
+
+install pyaudio before.
