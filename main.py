@@ -47,16 +47,12 @@ def send_audio():
 
 # Функция для получения данных (ID или аудио) и обработки
 def receive_data():
-    connected = False
     while True:
         data, addr = sock.recvfrom(1024 * 10)
         # Если данные меньше определенного размера, считаем, что это ID
         if len(data) < 50:
             received_id = data.decode()
             print(f"Получен ID другого пользователя: {received_id}")
-            if not connected:
-                print("Пользователи успешно подключились друг к другу")
-                connected = True
         else:
             # Воспроизведение аудио
             stream.write(data)
